@@ -10,6 +10,7 @@ public class SmartshoppingApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SmartshoppingApplication.class, args);
+		//test
 	}
 
 }
