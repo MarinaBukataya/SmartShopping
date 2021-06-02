@@ -10,7 +10,7 @@ public class SmartshoppingApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SmartshoppingApplication.class, args);
-		int aaaT = 0;
+		int aaaT =1;
 	}
 
 }
