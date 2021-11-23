@@ -34,28 +34,9 @@ public class TokensManager {
 		throw new NotFoundException("Token was not recognised");
 	}
 
-	public void deleteExpiredTokens() {
-		this.tokens.values().removeIf(x -> {
-			Date now = new Date();
-			Calendar calendar = Calendar.getInstance();
-			calendar.setTime(now);
-			calendar.add(Calendar.MINUTE, 30);
-			Date tokenCreate = new Date(x.getTimeStamp());
-			return now.after(tokenCreate);
-		});
-	}
 
 	public void deleteToken(String token) {
 		this.tokens.remove(token);
 	}
 	
-//	public void deleteExpiredTokens() {
-//		this.tokens.values().removeIf(x -> {
-//			Date creationTime = new Date(x.getTimeStamp());
-//			Date expirationTime = new Date();
-//			expirationTime.setTime(creationTime.getTime() + 30 * 60 * 1000);
-//			return creationTime.after(expirationTime);
-//		});
-//	}
-
 }
