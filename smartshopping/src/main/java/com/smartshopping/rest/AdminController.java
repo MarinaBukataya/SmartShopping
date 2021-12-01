@@ -29,7 +29,8 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("admin")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "https://smart-shopping-311716.ew.r.appspot.com", allowedHeaders = "*", allowCredentials = "true")
+@CrossOrigin(origins = "https://smartshopping-2e420.web.app", allowedHeaders = "*", allowCredentials = "true")
+//@CrossOrigin(origins = "https://smart-shopping-311716.ew.r.appspot.com", allowedHeaders = "*", allowCredentials = "true")
 public class AdminController extends UserController {
 
 	private final AdminService adminService;

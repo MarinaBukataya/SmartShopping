@@ -9,7 +9,7 @@ public enum Category {
 	BREAD,
 	CEREAL,
 	CONDIMENTS,
-	COOKIES,
+	CONFECTIONERY,
 	CANNEDGOODS,
 	DAIRY,
 	EGGS,
