@@ -25,8 +25,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("consumer")
-//@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", allowCredentials = "true")
 @CrossOrigin(origins = "https://smartshopping-2e420.web.app", allowedHeaders = "*", allowCredentials = "true")
+//@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*", allowCredentials = "true")
 //@CrossOrigin(origins = "https://smart-shopping-311716.ew.r.appspot.com", allowedHeaders = "*", allowCredentials = "true")
 public class ConsumerController extends UserController {
 
